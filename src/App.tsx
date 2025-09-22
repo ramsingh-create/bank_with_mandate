@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {Login} from "./components/pages/Login";
+import { BankDetails } from "./components/pages/BankDetails";
+import Loader from "./components/pages/Loader";
+import { Success } from "./components/pages/Success";
+import { PhysicalMandate } from "./components/pages/PhysicalMandate";
+import { Mandate } from "./components/pages/Mandate";
+// import Loader from "./components/pages/Loader";
 
-function App() {
+
+export default function App() {
+  const mode = useSelector((state: any) => state.theme.mode);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={mode === "dark" ? "dark" : ""}>
+      <Loader/>
+      <Router>
+        <Routes>
+            <Route path="/" element={<Login/>} />
+            <Route path="/BankDetails" element={<BankDetails/>} />
+            <Route path="/Success" element={<Success/>} />
+            <Route path="/PhysicalMandate" element={<PhysicalMandate/>} />
+            <Route path="/Mandate" element={<Mandate/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
-
-export default App;
