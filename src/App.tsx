@@ -7,6 +7,8 @@ import Loader from "./components/pages/Loader";
 import { Success } from "./components/pages/Success";
 import { PhysicalMandate } from "./components/pages/PhysicalMandate";
 import { Mandate } from "./components/pages/Mandate";
+import { BankMandateInfo } from "./components/pages/BankMandateInfo";
+import { BankMandateSelectOnboarding } from "./components/pages/BankMandateSelectOnboarding";
 // import Loader from "./components/pages/Loader";
 
 
@@ -20,6 +22,8 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Login/>} />
             <Route path="/BankDetails" element={<BankDetails/>} />
+            <Route path="/BankMandateInfo" element={<BankMandateInfo/>} />
+            <Route path="/BankMandateSelectOnboarding" element={<BankMandateSelectOnboarding/>} />
             <Route path="/Success" element={<Success/>} />
             <Route path="/PhysicalMandate" element={<PhysicalMandate/>} />
             <Route path="/Mandate" element={<Mandate/>} />

@@ -350,7 +350,7 @@ export const Mandate = () => {
                 {aadhaarVisible && (
                     <div
                         className="mt-6 p-3 shadow-md rounded-lg cursor-pointer hover:bg-gray-50 transition-colors"
-                        onClick={aadhaarMandate}
+                        onClick={() => {}} // aadhaarMandate
                     >
                         <div className="flex items-center">
                             <div className="w-1/6 flex items-center text-center text-[#4328ae] h-[59px]">
