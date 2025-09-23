@@ -9,6 +9,7 @@ import { PhysicalMandate } from "./components/pages/PhysicalMandate";
 import { Mandate } from "./components/pages/Mandate";
 import { BankMandateInfo } from "./components/pages/BankMandateInfo";
 import { BankMandateSelectOnboarding } from "./components/pages/BankMandateSelectOnboarding";
+import { PhysicalMandateUpload } from "./components/pages/PhysicalMandateUpload";
 // import Loader from "./components/pages/Loader";
 
 
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/Success" element={<Success/>} />
             <Route path="/PhysicalMandate" element={<PhysicalMandate/>} />
             <Route path="/Mandate" element={<Mandate/>} />
+            <Route path="/PhysicalMandateUpload" element={<PhysicalMandateUpload/>} />
         </Routes>
       </Router>
     </div>
