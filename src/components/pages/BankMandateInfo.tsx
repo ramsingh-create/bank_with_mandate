@@ -98,32 +98,34 @@ export const BankMandateInfo = () => {
                     </div>
                     <div className="w-3/4">
                         <p className="text-[16px] font-bold text-[#4328ae]">Set Up Auto Repayment</p>
-                        <p className="text-[12px] text-[#616065] leading-4">
-                            Follow instructions to set up auto<br />repayment
-                        </p>
+                        <span className="text-[12px] text-[#616065] leading-4">
+                            Follow instructions to set up auto
+                            <br/>
+                            repayment
+                        </span>
                     </div>
                 </div>
 
                 {/* Step Indicator */}
-                <div className="flex items-center mt-5 bg-[#ede7f6] rounded-t-[22px] px-4 py-2">
+                <div className="flex items-center mt-5 bg-[#ede7f6] rounded-t-[22px] px-5 pt-2 pb-7">
                     <div className="bg-[#97C93E] rounded-[12px] px-2 text-white text-[12px] font-bold">2</div>
-                    <div className="text-[12px] text-black mt-1 ml-1">/4</div>
+                    <div className="text-[12px] text-black mt-1">/4</div>
                     <div className="text-[12px] text-black ml-3">Setup Autopay</div>
                 </div>
 
                 {/* Bank Details */}
                 <div className="bg-white rounded-t-[22px] mt-[-20px] px-8 py-6">
-                    <p className="text-[12px]">{bankDetails.bankName}</p>
-                    <p className="text-[12px] text-[#828282]">A/C : {bankDetails.bankAccountNo}</p>
+                    <span className="text-[12px]">{bankDetails.bankName}</span><br />
+                    <span className="text-[12px] text-[#828282]">A/C : {bankDetails.bankAccountNo}</span>
                 </div>
 
-                <hr className="border-t border-gray-300 my-2" />
+                <hr className="border-t border-gray-400 " />
 
                 {/* Instructions */}
                 <div className="bg-white px-8 py-6">
                     <p className="text-[14px] font-bold mb-4">Please follow these steps</p>
 
-                    {[
+                    {/* {[
                         'Select the relevant repayment option which is well supported with your bank',
                         'You will be redirected to our secured partnered portal ‘Digio’',
                         'Enter required details for processing authentication and set up auto repayment',
@@ -134,7 +136,28 @@ export const BankMandateInfo = () => {
                             </div>
                             <div className="pl-3 text-[12px] text-[#616065] leading-4">{text}</div>
                         </div>
-                    ))}
+                    ))} */}
+
+                        <div className="flex items-start">
+                            <div className="w-4 text-center text-[#97C93E] flex flex-col">
+                                <span className="material-icons text-[24px]">check_circle</span>
+                                <hr className="transform rotate-90 w-8 border-t-2 border-gray-400 my-4 -mx-1" />
+                            </div>
+                            <div className="ml-6 text-[12px] text-[#616065] "><span className='leading-[2]'>Select the relevant repayment option <br /> which is well supported with your bank</span></div>
+                        </div>
+                        <div className="flex items-start mb-4">
+                            <div className="w-4 text-center text-[#97C93E] flex flex-col ">
+                                <span className="material-icons text-[24px]">check_circle</span>
+                                <hr className="transform rotate-90 w-8 border-t-2 border-gray-400 my-4 -mx-1" />
+                            </div>
+                            <div className="ml-6 text-[12px] text-[#616065]"><span className='leading-[2]'>You will be redirected to our secured partnered <br /> portal ‘Digio’</span></div>
+                        </div>
+                        <div className="flex items-start mb-4">
+                            <div className="w-4 text-center text-[#97C93E]">
+                                <span className="material-icons text-[24px]">check_circle</span>
+                            </div>
+                            <div className="ml-6 text-[12px] text-[#616065]"><span className='leading-[2]'>Enter required details for processing <br />authentication and set up auto <br />repayment </span></div>
+                        </div>
 
                     {/* CTA Button */}
                     <div className="pt-12 pb-6 max-w-[450px] mx-auto">

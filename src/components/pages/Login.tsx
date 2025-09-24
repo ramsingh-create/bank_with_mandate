@@ -365,7 +365,7 @@ export const Login: React.FC = () => {
                 )}
 
                 {/* Header Section */}
-                <div className=" bg-[#4328ae] p-6 text-white w-xl">
+                {/* <div className=" bg-[#4328ae] p-6 text-white w-xl">
                     <img src={logo} alt="Logo" className="w-[120px] mb-4" />
                     <img src={character} alt="Character" className="w-[180px] mb-4" />
                     <div className="text-[14px] font-bold">
@@ -374,7 +374,29 @@ export const Login: React.FC = () => {
                     <div className="mt-2 text-[12px]">
                         Set up auto repayment to avail this credit limit
                     </div>
+                </div> */}
+
+                <div className="bg-[#4328ae]">
+                    <div className="flex items-baseline">
+                    <img
+                        src={logo}
+                        className="w-[120px] mt-6 mr-[34px] ml-[34px]"
+                        alt="Supermoney Logo"
+                    />
+                    <img
+                        src={character}
+                        className="w-[180px] mt-6 mb-2.5 mr-[33px] ml-[33px]"
+                        alt="Character"
+                    />
+                    </div>
+                    <div className="mx-8 text-sm text-white font-bold">
+                        Congratulations! You’ve been granted a pre-approved credit limit
+                    </div>
+                    <div className="mx-[33px] mt-2.5 pb-7 text-white text-xs">
+                        Set up auto repayment to avail this credit limit
+                    </div>
                 </div>
+
 
                 {/* Login Form */}
                 <div className="rounded-b-lg bg-white p-6 text-gray-700">

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { RootState } from '../../store/store';
 import { routeChange, setAuthToken } from '../../store/appSlice';
-import physicalmandateupload from '../../assets/images/physicalmandateupload copy.png';
+import physicalmandateupload from '../../assets/images/physicalmandateupload.png';
 import { makeAPIGETRequest, makeAPIPOSTRequest } from '../../utils/apiActions';
 import { DocumentSection } from '../organisms/DocumentSection';
 
